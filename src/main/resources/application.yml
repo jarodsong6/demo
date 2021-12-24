@@ -1,0 +1,12 @@
+spring:
+  redis:
+    database: 5
+    cluster:
+      nodes: 127.0.0.1:6379
+      max-redirects: 3
+    jedis:
+      pool:
+        max-active: 2000
+        max-idle: 200
+        min-idle: 100
+    timeout: 10s
